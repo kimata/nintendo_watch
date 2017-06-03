@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # My Nintendo Switch の入荷を監視するスクリプト
+# 入荷があった場合，config.yaml で指定されたアドレスにメールを
+# 送信します．
 
 require 'nokogiri'
 require 'capybara'
