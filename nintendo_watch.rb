@@ -74,8 +74,8 @@ def check_sodout(session)
     if (target_node.search("//p[text()='SOLD OUT']").length == 0) then
       return true
     end
-  rescue
-    #
+  rescue => ex
+    puts ex.message
   end
 
   return false
