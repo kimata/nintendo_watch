@@ -71,7 +71,7 @@ def check_sodout(session)
     session.visit(WATCH_URL)
     doc = Nokogiri::HTML.parse(session.html)
     target_node = doc.search("//p[text()='Nintendo Switch™']/..")
-    if (target_node.search("//p[text()='SOLD OUTa']").length == 0) then
+    if (target_node.search("//p[text()='SOLD OUT']").length == 0) then
       return true
     end
   rescue
